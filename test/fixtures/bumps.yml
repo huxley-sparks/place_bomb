@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  owner: MyString
+  title: MyString
+  description: 
+  timestamp: 
+  location: MyString
+  prviate: false
+  filetype: MyString
+
+two:
+  owner: MyString
+  title: MyString
+  description: 
+  timestamp: 
+  location: MyString
+  prviate: false
+  filetype: MyString
