@@ -1,8 +1,8 @@
 class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
-      t.string :upload
-      t.string :download
+      t.string :name
+      t.string :location
 
       t.timestamps
     end
