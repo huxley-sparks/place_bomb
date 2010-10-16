@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101016103526) do
+ActiveRecord::Schema.define(:version => 20101016144022) do
 
   create_table "bumps", :force => true do |t|
     t.string   "owner"
@@ -34,6 +34,9 @@ ActiveRecord::Schema.define(:version => 20101016103526) do
     t.string   "download"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "upload_file_name"
+    t.string   "upload_content_type"
+    t.integer  "upload_file_size"
   end
 
 end
