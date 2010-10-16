@@ -35,6 +35,14 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
+=begin
+	if @user.upload_file_name.save
+		flash[:notice] = "Bomb has been placed"
+		render :action => :edit
+	else
+		render :action => :index
+	end
+=end
   end
 
   # POST /users
@@ -79,5 +87,8 @@ class UsersController < ApplicationController
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
     end
+  end
+
+  def bombs
   end
 end
