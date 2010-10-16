@@ -89,6 +89,4 @@ class UsersController < ApplicationController
     end
   end
 
-  def bombs
-  end
 end
