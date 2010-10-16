@@ -1,4 +1,4 @@
 class User < ActiveRecord::Base
 	# Using paperclip to attach files
-	has_attached :upload
+	has_attached_file :upload
 end
